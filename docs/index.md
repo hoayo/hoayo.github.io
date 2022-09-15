@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: 查尔斯的知识库
+title: 陸汣的知识库
 titleTemplate: 个人知识库，记录和分享个人碎片化、结构化、体系化的知识内容
 
 hero:
-  name: 查尔斯的知识库
+  name: 陸汣的知识库
   text: 专注 & 洞察 & 分享
   tagline: 个人知识库，记录 & 分享个人碎片化、结构化、体系化的知识内容。
   image:
@@ -17,7 +17,7 @@ hero:
       link: /categories/issues/index.html
     - theme: alt
       text: View on GitHub
-      link: https://github.com/Charles7c/charles7c.github.io
+      link: https://github.com/hoayo/hoayo.github.io
 
 features:
   - icon: ⚡️

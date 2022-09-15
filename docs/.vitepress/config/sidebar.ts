@@ -6,6 +6,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   '/categories/issues/': getItemsByDate("categories/issues"),
   '/categories/fragments/': getItemsByDate("categories/fragments"),
   '/categories/solutions/': getItemsByDate("categories/solutions"),
+  '/categories/essays/': getItemsByDate("categories/essays"),
 
   '/courses/java/': getItems("courses/java"),
   '/courses/mybatis/': getItems("courses/mybatis")
@@ -19,7 +20,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
  * @param path 扫描基础路径
  * @returns {DefaultTheme.SidebarGroup[]}
  */
-function getItemsByDate (path: string) {
+function getItemsByDate(path: string) {
   // 侧边栏年份分组数组
   let yearGroups: DefaultTheme.SidebarGroup[] = []
 
@@ -107,7 +108,7 @@ function getItemsByDate (path: string) {
  * @param path 扫描基础路径
  * @returns {DefaultTheme.SidebarGroup[]}
  */
-function getItems (path: string) {
+function getItems(path: string) {
   // 侧边栏分组数组
   let groups: DefaultTheme.SidebarGroup[] = []
   // 侧边栏分组下标题数组

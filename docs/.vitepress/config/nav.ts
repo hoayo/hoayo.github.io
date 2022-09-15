@@ -6,7 +6,8 @@ export const nav: DefaultTheme.Config['nav'] = [
     items: [
       { text: 'Bug万象集', link: '/categories/issues/index', activeMatch: '/categories/issues/' },
       { text: '"杂碎"逆袭史', link: '/categories/fragments/index', activeMatch: '/categories/fragments/' },
-      { text: '方案春秋志', link: '/categories/solutions/index', activeMatch: '/categories/solutions/' }
+      { text: '方案春秋志', link: '/categories/solutions/index', activeMatch: '/categories/solutions/' },
+      { text: '碎碎念', link: '/categories/essays/index', activeMatch: '/categories/essays/' }
     ],
     activeMatch: '/categories/'
   },
@@ -14,7 +15,8 @@ export const nav: DefaultTheme.Config['nav'] = [
     text: '我的小册',
     items: [
       { text: 'Java基础快速入门', link: '/courses/java/index', activeMatch: '/courses/java/' },
-      { text: 'MyBatis快速入门', link: '/courses/mybatis/index', activeMatch: '/courses/mybatis/' }
+      { text: 'MyBatis快速入门', link: '/courses/mybatis/index', activeMatch: '/courses/mybatis/' },
+      { text: 'Spring快速入门', link: '/courses/mybatis/index', activeMatch: '/courses/mybatis/' }
     ],
     activeMatch: '/courses/'
   },

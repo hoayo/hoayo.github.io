@@ -3,14 +3,14 @@ title: SpringBoot项目引入OpenFeign后无法启动
 author: 查尔斯
 date: 2022/08/31 22:39
 categories:
- - Bug万象集
+  - Bug万象集
 tags:
- - "Spring Boot"
- - "Spring Cloud"
- - "Open Feign"
+  - "Spring Boot"
+  - "Spring Cloud"
+  - "Open Feign"
 ---
 
-# SpringBoot项目引入OpenFeign后无法启动
+# SpringBoot 项目引入 OpenFeign 后无法启动
 
 **C：** 由于项目需要调用第三方 API，所以打算使用 Open Feign 来作为调用工具。但这次新项目用的 Spring Boot 版本有点高，花了点时间排除问题。
 
@@ -18,7 +18,7 @@ tags:
 
 ## 问题描述
 
-先简单描述一下我们项目的技术栈，这是一个前后端分离的单体项目，前端不用提，后端部分主框架用的是 Spring Boot 2.7.2 版本。现在需要对接第三方 API，打算使用 Open Feign 来作为调用工具。Open Feign 是 Spring Cloud 开发的一个轻量级RESTful HTTP 服务客户端，多数使用的场景是用于微服务项目。
+先简单描述一下我们项目的技术栈，这是一个前后端分离的单体项目，前端不用提，后端部分主框架用的是 Spring Boot 2.7.2 版本。现在需要对接第三方 API，打算使用 Open Feign 来作为调用工具。Open Feign 是 Spring Cloud 开发的一个轻量级 RESTful HTTP 服务客户端，多数使用的场景是用于微服务项目。
 
 ### 引入依赖
 
@@ -94,7 +94,7 @@ public class FeignConfig {
         }
         return Logger.Level.FULL;
     }
-    
+
     /**
      * 解决 javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No subject alternative names present
      * @return /
@@ -111,7 +111,7 @@ public class FeignConfig {
 }
 ```
 
-### 启用Feign
+### 启用 Feign
 
 最后只需要在启动类上使用 `@EnableFeignClients` 启用一下配置即可。
 
@@ -138,7 +138,7 @@ public class WebApiApplication {
 
 根据以前的经验到这步也就结束了，该怎么用 Feign 就怎么用了。好的，写完之后启动项目。
 
-![202208312238666](../../../../../public/img/2022/08/31/202208312238666.png)
+![202208312238666](../../../../../public/img/2022/08/31/202208312238666.png#img-radius)
 
 显然笔者被技术的 "浪潮" 又拍了一个 "跟头"，技术从来都不是停滞不前的，采用新版本就肯定会有这样那样的问题，不提前做版本踩坑和梳理，就必然如此。
 
@@ -340,7 +340,7 @@ Spring Cloud Open Feign 在 Hoxton.M2 版本之后就不再使用 Ribbon 了，�
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
-    
+
     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-loadbalancer</artifactId>
