@@ -17,3 +17,6 @@ samp {
 img[src*="#img-radius"] {
   border-radius: 8px;
 }
+.VPDoc .content-container img {
+  border-radius: 8px;
+}
